@@ -1,0 +1,71 @@
+@use "../abstract/" as *;
+@use "../base/" as *;
+
+.blog{
+    &__wrapper{
+        width: 85rem;
+        padding: 6.5rem;
+        h2{
+            border-bottom: 2px solid $clr-line;
+        }
+    }
+    &__card{
+        display: flex;
+        gap: 2rem ;
+        padding-top: 2rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 2px solid $clr-line;
+        img{
+            width: 23rem;
+            border-radius: 1rem;
+        }
+    }
+    &__date{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        line-height: 0.9;
+        padding-top: 1rem;
+        p{
+            font-size: 5rem;
+        }
+        p:nth-child(2){
+            font-size: 2.5rem;
+        }
+    }
+    &__text{
+        display: flex;
+        flex-direction: column;
+        width: 30rem;
+        a{
+            margin-top: 2rem;
+            background-color: $clr-secondary;
+            color: $clr-light;
+            padding: 0.8rem 2rem;
+            font-size: 1.3rem;
+            width: 7rem;
+            &:hover{
+                background-color: $clr-light;
+                color: $clr-dark;
+            }
+        }
+        p{
+            padding-top: 1rem;
+            font-weight: 500;
+        }
+    }
+    &__entries{
+        padding-top: 4rem;
+        a{
+            background-color: $clr-secondary;
+            padding: 1rem 2rem;
+            color: $clr-light;
+            font-size: 1.3rem;
+            font-weight: 500;
+            &:hover{
+                background-color: $clr-light;
+                color: $clr-dark;
+            }
+        }
+    }
+}

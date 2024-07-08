@@ -1,0 +1,109 @@
+@use "../abstract/" as *;
+@use "../base/" as *;
+
+.aboutFeature{
+    &__wrapper{
+    padding: 0rem 4rem;
+    padding-bottom: 5rem;
+    width: 85rem;
+    }
+    &__title{
+        padding-top: 4rem;
+        width: 72rem;
+    }
+    &__content{
+        display: flex;
+        gap: 2.5rem;
+        padding-top: 3rem;
+    }
+    &__card{
+        text-align: center;
+        &__text{
+            h3{
+                font-size: 1.5rem;
+            }
+            p{
+                width: 16rem;
+                padding-top: 1rem;
+            }
+        }
+        &__btn{
+            padding-top: 4rem;
+            a{
+                background-color: $clr-secondary;
+            }
+        }
+    }
+}
+
+.aboutHistory{
+    &__wrapper{
+        padding: 0rem 4rem;
+        padding-bottom: 3rem;
+        display: flex;
+        gap: 2rem;
+        width: 85rem;
+        h2{
+            border-bottom: 2px solid #fa8489 ;
+        }
+    }
+    &__oh{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding-top: 2rem;
+        p{
+            width: 48rem;
+        }
+        &--text{
+           display: flex;
+           flex-direction: column;
+           gap: 2rem;
+        }
+    }
+    &__op{
+        padding-top: 2rem;
+        &--text{
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            padding-top: 2rem;
+            h4{
+                color: $clr-line;
+            }
+        }
+    }   
+}
+
+.aboutTeam{
+    &__wrapper{
+        padding: 4rem 6rem 7rem 6rem; 
+        background-color: $clr-white;
+    }
+    &__title{
+        h2{
+            color: $clr-dark;
+        }
+    }
+    &__card{
+        @include grid(4, 2rem)
+    }
+    &__content{
+        padding-top: 2.5rem;
+        img{
+            width: 19rem;
+        }
+    }
+    &__text{
+        margin-top: 1.5rem;
+        h4{
+            font-size: 0.9rem;
+            color: $clr-secondary;
+        }
+        p{
+            color: #979594;
+            font-size: 1.1rem;
+            font-weight: 400;
+        }
+    }
+}

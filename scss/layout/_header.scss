@@ -1,0 +1,31 @@
+@use "../abstract/" as *;
+@use "../base/" as *;
+
+.header{
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        img{
+            width: 12rem;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+
+    }
+    &__nav{
+        display: flex;
+        gap: 2rem;
+        padding-right: 8rem;
+        li{
+            a{
+                color: $clr-light;
+                font-size: 1.2rem;
+            }
+        }
+        &:hover{
+            
+        }
+    }
+}

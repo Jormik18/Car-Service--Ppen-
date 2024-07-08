@@ -1,0 +1,42 @@
+@mixin mediaQuery($width) {
+    @media screen and (max-width: $width) {
+      @content;
+    }
+}
+// To Center
+@mixin centerAll {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  
+  // For Space Between
+  @mixin between {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+  }
+  
+  // For BG Img
+  @mixin bgImgSize {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  
+  // For the image not to strecth
+  @mixin imgFit($width: 300px, $height: 300px) {
+    width: $width;
+    height: $height;
+    object-fit: cover;
+    object-position: center center;
+  }
+  
+  // For grid
+  @mixin grid($cols, $gap) {
+    display: grid;
+    grid-template-columns: repeat($cols, 1fr);
+    gap: $gap;
+  }
+  

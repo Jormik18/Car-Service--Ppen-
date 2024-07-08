@@ -1,0 +1,16 @@
+@use "../base/" as *;
+@use "../abstract/" as *;
+
+.title{
+    font-size: 2.5rem;
+    font-family: $font-primary;
+    font-weight: 500;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid $clr-line;
+    padding-top: 2rem;
+    &.title__lightline{
+        @extend.title;
+        border-bottom: 1px solid #979594;
+        padding-bottom: 0rem;
+    }   
+}

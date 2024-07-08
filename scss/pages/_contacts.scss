@@ -1,0 +1,73 @@
+@use "../abstract/" as *;
+@use "../base/" as *;
+
+.contact{
+    &__wrapper{
+        background-color: $clr-white;
+        padding: 3rem 6rem 6rem 6rem;
+
+    }
+    &__content{
+        display: flex;
+        gap: 2rem;
+
+    }
+    &__htfu{
+        width: 30rem;
+        &--title{
+            h2{
+                color: $clr-dark;
+            }
+        }
+        &__random{
+            padding-top: 3rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #979594;
+            p{
+                color: $clr-secondary;
+            }
+        }
+        &__description{
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            p{
+                color: #3e3e43;
+                font-size: 1.1rem;
+            }
+        }
+    }
+    &__form{
+        &--title{
+            h2{
+                color: $clr-dark;
+            }
+        }
+        &--input{
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            padding-top: 2rem;
+            input{
+                padding: 0.6rem;
+                border: 1px solid #979594;
+                background-color: transparent;
+                width: 30rem;
+            }
+            textarea{
+                padding: 0.6rem;
+                border: 1px solid #979594;
+                background-color: transparent;
+                resize: none;
+                width: 40rem;
+                height: 12rem;
+            }
+        }
+        &--btn{
+            display: flex;
+            gap: 2rem;
+            padding-top: 3rem;
+            justify-content: flex-end;
+        }
+    }
+}

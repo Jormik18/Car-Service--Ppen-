@@ -1,0 +1,18 @@
+@use "../abstract/" as *;
+
+.btn{
+    background-color: $clr-secondary;
+    color: $clr-light;
+    padding: 0.8rem 2rem;
+    font-size: 1.3rem;
+    width: 7rem;
+    &:hover{
+        background-color: $clr-light;
+        color: $clr-dark;
+    }
+    &.btn__contact{
+        @extend.btn;
+        color: $clr-white;
+        width: 7.5rem;
+    }
+}
